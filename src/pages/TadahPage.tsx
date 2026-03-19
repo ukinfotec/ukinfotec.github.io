@@ -67,7 +67,7 @@ export default function TadahPage() {
                 <div className={styles.appIconWrap}>
                     <img src={iosIcon} alt="iOS Icon" className={styles.appIcon} />
                 </div>
-                <h1 className={styles.heroTitle}><img src={tadahTitle} alt="Tadah" width="200" /></h1>
+                <h1 className={styles.heroTitle}><img src={tadahTitle} alt="Tadah" width="150" /></h1>
             </div>
             <p className={styles.heroTagline}>Task management that actually rewards you</p>
             <p className={styles.heroDesc}>
