@@ -44,7 +44,6 @@ export default function Footer() {
             </a>
           ))}
           <Link to="/apps/tadah">Tadah</Link>
-          <a href="/docs/PrivacyPolicy.md">Privacy Policy</a>
         </nav>
       </div>
       <div className={`container ${styles.bottom}`}>

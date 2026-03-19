@@ -22,6 +22,15 @@ const apps: App[] = [
     status: 'coming-soon',
     route: '/apps/tadah',
   },
+  {
+    icon: '🎧',
+    name: 'SonicDive',
+    tagline: 'A premium Subsonic client for iOS',
+    description: 'Stream your personal music library from any Subsonic server. Gapless playback, offline downloads, CarPlay support, and rich artist info — beautifully designed for iOS.',
+    platforms: ['iOS'],
+    status: 'coming-soon',
+    route: '/apps/sonicdive',
+  },
 ]
 
 export default function Apps() {
