@@ -1,0 +1,151 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 20px 0;
+  transition: background 0.3s, box-shadow 0.3s, padding 0.3s;
+}
+
+.header.scrolled {
+  background: rgba(13, 27, 42, 0.97);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 2px 20px rgba(0,0,0,0.25);
+  padding: 12px 0;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.logoMark {
+  background: var(--accent);
+  color: var(--navy);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+}
+
+.logoText {
+  color: var(--white);
+  letter-spacing: -0.02em;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.navLink {
+  color: rgba(255,255,255,0.8);
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 8px 14px;
+  border-radius: var(--radius-sm);
+  transition: color 0.2s, background 0.2s;
+}
+
+.navLink:hover {
+  color: var(--white);
+  background: rgba(255,255,255,0.08);
+}
+
+.cta {
+  background: var(--accent);
+  color: var(--navy);
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 9px 20px;
+  border-radius: var(--radius-sm);
+  transition: background 0.2s, transform 0.2s;
+  margin-left: 8px;
+}
+
+.cta:hover {
+  background: var(--accent-light);
+  transform: translateY(-1px);
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.burgerLine,
+.burgerLineOpen1,
+.burgerLineOpen2,
+.burgerLineHidden {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--white);
+  border-radius: 2px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.burgerLineOpen1 {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.burgerLineHidden {
+  opacity: 0;
+}
+
+.burgerLineOpen2 {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+  .burger {
+    display: flex;
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--navy);
+    flex-direction: column;
+    align-items: stretch;
+    padding: 16px 24px 24px;
+    gap: 4px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  }
+
+  .nav.navOpen {
+    display: flex;
+  }
+
+  .navLink {
+    padding: 12px 8px;
+    font-size: 1rem;
+  }
+
+  .cta {
+    text-align: center;
+    margin-left: 0;
+    margin-top: 8px;
+    padding: 12px;
+  }
+}

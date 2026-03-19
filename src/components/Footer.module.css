@@ -1,0 +1,81 @@
+.footer {
+  background: var(--navy);
+  padding: 48px 0 0;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.logoMark {
+  background: var(--accent);
+  color: var(--navy);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
+.logoText {
+  color: var(--white);
+}
+
+.tagline {
+  font-size: 0.83rem;
+  color: rgba(255,255,255,0.35);
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 4px;
+}
+
+.links a {
+  color: rgba(255,255,255,0.55);
+  font-size: 0.87rem;
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+  transition: color 0.2s, background 0.2s;
+}
+
+.links a:hover {
+  color: var(--white);
+  background: rgba(255,255,255,0.06);
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 20px 24px;
+}
+
+.bottom p {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.3);
+}
+
+@media (max-width: 640px) {
+  .inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
