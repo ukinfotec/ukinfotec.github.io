@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SonicDive – Privacy Policy</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #06101f;
+    --surface: #0c1a2e;
+    --border: #1a2a44;
+    --accent: #7c6aff;
+    --text: #e0e4ec;
+    --muted: #7a8599;
+    --heading: #ffffff;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.7;
+    min-height: 100vh;
+  }
+
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: clamp(32px, 6vw, 80px) clamp(20px, 4vw, 40px);
+  }
+
+  header {
+    margin-bottom: 48px;
+  }
+
+  .app-name {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 12px;
+  }
+
+  h1 {
+    font-size: clamp(28px, 5vw, 40px);
+    font-weight: 700;
+    color: var(--heading);
+    margin-bottom: 8px;
+  }
+
+  .meta {
+    font-size: 13px;
+    color: var(--muted);
+  }
+
+  h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--heading);
+    margin-top: 40px;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  p {
+    margin-bottom: 16px;
+    font-size: 15px;
+  }
+
+  ul {
+    margin-bottom: 16px;
+    padding-left: 24px;
+  }
+
+  li {
+    margin-bottom: 8px;
+    font-size: 15px;
+  }
+
+  strong {
+    color: var(--heading);
+    font-weight: 600;
+  }
+
+  a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .highlight {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin: 20px 0;
+    font-size: 15px;
+  }
+
+  footer {
+    margin-top: 60px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    font-size: 13px;
+    color: var(--muted);
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <div class="app-name">SonicDive</div>
+    <h1>Privacy Policy</h1>
+    <div class="meta">Version 1.0 &middot; Last updated: 19 March 2026</div>
+  </header>
+
+  <h2>Introduction</h2>
+  <p>SonicDive ("the App") is a music player for self-hosted Subsonic-compatible servers, developed by Richard P / UK Infotec ("we", "us", "our"). The App is designed with privacy as a core principle. This policy explains what data the App accesses, how it is used, and your rights regarding that data.</p>
+
+  <div class="highlight">
+    <strong>Summary:</strong> SonicDive does not collect, store, or transmit any personal information to us. All your data stays on your device and on your own self-hosted server. We have no access to your music library, server credentials, or listening habits.
+  </div>
+
+  <h2>Information We Collect</h2>
+  <p>We do not collect any personal information. The App does not contain any analytics, advertising, telemetry, or tracking code. We do not use any third-party analytics services.</p>
+
+  <h2>Data Stored on Your Device</h2>
+  <p>The App stores the following data locally on your device to provide its core functionality:</p>
+  <ul>
+    <li><strong>Server connection details</strong> &mdash; The URL, username, and authentication token for your Subsonic server, stored in the app's local storage so you don't have to re-enter them each session.</li>
+    <li><strong>Library cache</strong> &mdash; A local copy of your music library metadata (album names, artist names, track titles, artwork) stored in an on-device database to enable fast browsing and offline access.</li>
+    <li><strong>Downloaded audio files</strong> &mdash; If you choose to download tracks for offline listening, those files are stored in the app's local Documents directory.</li>
+    <li><strong>Artwork cache</strong> &mdash; Album and artist artwork is cached locally to reduce network usage and improve performance.</li>
+    <li><strong>Custom playlist images</strong> &mdash; If you assign a custom image to a playlist (selected from your Photo Library), it is saved locally on your device.</li>
+    <li><strong>App preferences</strong> &mdash; Your settings (e.g. artist info source preference) are stored locally.</li>
+  </ul>
+  <p>All of this data remains entirely on your device. We have no access to it and it is never transmitted to us.</p>
+
+  <h2>Network Connections</h2>
+  <p>The App makes network connections to the following services:</p>
+  <ul>
+    <li><strong>Your Subsonic server</strong> &mdash; The App connects directly to the Subsonic-compatible server that you configure. All communication is between your device and your own server. We are not involved in this connection and have no access to your server, credentials, or music library. We strongly recommend using HTTPS for this connection.</li>
+    <li><strong>TheAudioDB</strong> (optional) &mdash; If you enable the "TheAudioDB" artist info source in Settings, the App may fetch artist biographies, images, and metadata from TheAudioDB's public API. Only the artist name is sent in these requests. This feature is optional and can be disabled at any time.</li>
+    <li><strong>Apple App Store</strong> &mdash; If you purchase SonicDive Pro (the in-app purchase for offline downloads), this transaction is processed entirely by Apple through StoreKit. We do not receive or store any payment information. Apple's privacy policy governs this transaction.</li>
+  </ul>
+
+  <h2>Photo Library Access</h2>
+  <p>The App may request access to your Photo Library if you choose to assign a custom image to a playlist. This access is limited to the specific photo you select via Apple's system photo picker. The App does not browse, scan, or access any other photos. The selected image is stored locally on your device.</p>
+
+  <h2>Data Sharing</h2>
+  <p>We do not share, sell, rent, or disclose any of your data to third parties. The App contains no advertising and no analytics. There are no data brokers, ad networks, or tracking pixels involved.</p>
+
+  <h2>Data Retention &amp; Deletion</h2>
+  <p>All data is stored locally on your device. You can delete all app data at any time by:</p>
+  <ul>
+    <li>Removing downloaded tracks from within the App</li>
+    <li>Clearing the artwork cache from Settings</li>
+    <li>Deleting the App from your device, which removes all stored data</li>
+  </ul>
+
+  <h2>Children's Privacy</h2>
+  <p>The App does not collect personal information from anyone, including children. It is suitable for users of all ages.</p>
+
+  <h2>Changes to This Policy</h2>
+  <p>We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated revision date. Continued use of the App after changes constitutes acceptance of the updated policy.</p>
+
+  <h2>Contact Us</h2>
+  <p>If you have any questions about this Privacy Policy or the App's data practices, please contact us at:</p>
+  <p><a href="mailto:apps@ukinfotec.com">apps@ukinfotec.com</a></p>
+
+  <footer>
+    &copy; 2026 UK Infotec. All rights reserved.
+  </footer>
+
+</div>
+</body>
+</html>
