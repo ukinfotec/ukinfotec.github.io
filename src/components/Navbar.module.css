@@ -29,19 +29,25 @@
   font-size: 1.3rem;
 }
 
-.logoMark {
+.logoDiamond {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
   background: var(--accent);
-  color: var(--navy);
-  padding: 2px 8px;
-  border-radius: 4px;
-  font-size: 0.9rem;
-  font-weight: 800;
-  letter-spacing: 0.05em;
+  transform: rotate(45deg);
+  flex-shrink: 0;
 }
 
 .logoText {
   color: var(--white);
   letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+.logoUK {
+  color: var(--accent);
+  font-weight: 800;
+  margin-right: 1px;
 }
 
 .nav {

@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import IPhoneMockup from '../components/IPhoneMockup'
 import styles from './TadahPage.module.css'
 
@@ -44,6 +44,12 @@ const features = [
 ]
 
 export default function TadahPage() {
+  const navigate = useNavigate()
+
+  const goBack = () => {
+    window.scrollTo(0, 0)
+    navigate('/')
+  }
   return (
     <div className={styles.page}>
 
@@ -56,12 +62,13 @@ export default function TadahPage() {
         </div>
         <div className={`container ${styles.heroInner}`}>
           <div className={styles.heroText}>
-            <Link to="/" className={styles.backLink}>← All Apps</Link>
-            <div className={styles.appIconWrap}>
-              <img src={iosIcon} alt="iOS Icon" className={styles.appIcon} />
+            <button onClick={goBack} className={styles.backLink}>← All Apps</button>
+            <div style={{ flexDirection: 'row', display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '24px' }}>
+                <div className={styles.appIconWrap}>
+                    <img src={iosIcon} alt="iOS Icon" className={styles.appIcon} />
+                </div>
+                <h1 className={styles.heroTitle}><img src={tadahTitle} alt="Tadah" width="200" /></h1>
             </div>
-            <div className={styles.badge}>iOS App · Coming Soon</div>
-            <h1 className={styles.heroTitle}><img src={tadahTitle} alt="Tadah" width="200" /></h1>
             <p className={styles.heroTagline}>Task management that actually rewards you</p>
             <p className={styles.heroDesc}>
               Tadah turns your to-do list into something you look forward to. Earn

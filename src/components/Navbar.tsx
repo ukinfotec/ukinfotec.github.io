@@ -34,8 +34,10 @@ export default function Navbar() {
     <header className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}>
       <div className={`container ${styles.inner}`}>
         <Link to="/" className={styles.logo}>
-          <span className={styles.logoMark}>UK</span>
-          <span className={styles.logoText}>Infotec</span>
+          <span className={styles.logoDiamond} aria-hidden="true" />
+          <span className={styles.logoText}>
+            <span className={styles.logoUK}>UK</span>Infotec
+          </span>
         </Link>
 
         <nav className={`${styles.nav} ${menuOpen ? styles.navOpen : ''}`}>

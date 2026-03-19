@@ -1,5 +1,8 @@
 import styles from './Hero.module.css'
 
+const scrollTo = (id: string) =>
+  document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
+
 export default function Hero() {
   return (
     <section className={styles.hero}>
@@ -19,8 +22,8 @@ export default function Hero() {
           apps for iOS and the web. Less clutter, more craft.
         </p>
         <div className={styles.actions}>
-          <a href="#apps" className={styles.btnPrimary}>See Our Apps</a>
-          <a href="#contact" className={styles.btnSecondary}>Get in Touch</a>
+          <button onClick={() => scrollTo('apps')} className={styles.btnPrimary}>See Our Apps</button>
+          <button onClick={() => scrollTo('contact')} className={styles.btnSecondary}>Get in Touch</button>
         </div>
         <div className={styles.stats}>
           <div className={styles.stat}>

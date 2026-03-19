@@ -112,8 +112,11 @@
   color: var(--navy);
   font-weight: 700;
   font-size: 0.95rem;
+  font-family: inherit;
   padding: 14px 28px;
+  border: none;
   border-radius: var(--radius-sm);
+  cursor: pointer;
   transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
   box-shadow: 0 4px 20px rgba(13, 191, 184, 0.3);
 }
@@ -125,12 +128,15 @@
 }
 
 .btnSecondary {
+  background: none;
   border: 1.5px solid rgba(255,255,255,0.25);
   color: rgba(255,255,255,0.85);
   font-weight: 600;
   font-size: 0.95rem;
+  font-family: inherit;
   padding: 14px 28px;
   border-radius: var(--radius-sm);
+  cursor: pointer;
   transition: border-color 0.2s, color 0.2s, background 0.2s;
 }
 
