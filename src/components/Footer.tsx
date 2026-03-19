@@ -49,7 +49,6 @@ export default function Footer() {
       </div>
       <div className={`container ${styles.bottom}`}>
         <p>&copy; {year} UK Infotec. All rights reserved.</p>
-        <p>Registered in England &amp; Wales</p>
       </div>
     </footer>
   )

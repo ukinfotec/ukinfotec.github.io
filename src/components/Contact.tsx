@@ -35,8 +35,8 @@ export default function Contact() {
                 <span className={styles.contactIcon}>📧</span>
                 <div>
                   <div className={styles.contactLabel}>Email</div>
-                  <a href="mailto:hello@ukinfotec.co.uk" className={styles.contactValue}>
-                    hello@ukinfotec.co.uk
+                  <a href="mailto:support@ukinfotec.com" className={styles.contactValue}>
+                    support@ukinfotec.com
                   </a>
                 </div>
               </div>
